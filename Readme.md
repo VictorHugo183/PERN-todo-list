@@ -19,7 +19,7 @@ Inside the client folder you will find the frontend section built with React.js 
 <p>The API will then take that request and insert its contents into the todo table in our database.
 </li>
 <li><strong>EditTodos:</strong><br>
-<p>Responsible for editing task descriptions, if is imported and used by the ListTodos component
+<p>Responsible for editing task descriptions, it is imported and used by the ListTodos component
 <p>By clicking the Edit button, we're able to view the tasks description and alter it, doing so will update the description state with that value
 <p>When we click apply, we call the function to send a PUT request to our server API with our new description in the body.
 <p>The API will then tell the database to update the contents of the description column for that given todo, based on its id.
