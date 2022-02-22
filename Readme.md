@@ -71,7 +71,7 @@ The API will then tell the database to update the contents of the description co
     </ul>
   </li>
   <li>
-    inside the <code>/server</code> directory run <code>node index.js</code> to start the server.
+    inside the <code>/server</code> directory run <code>node index.js</code> to start the server. You can also run <code>npm run develop</code> to run the server with nodemon, allowing for real time updates to the server.
   </li>
   <li>
     inside the <code>/client</code> directory run <code>npm start</code> to start the application.
