@@ -2,27 +2,27 @@
 
 ## About:
 A todo list application built with the PERN stack (PostgreSQL, Express, React, NodeJS).<br>
-The frontend sends requests to the backend NodeJS API which then instructs the PostgreSQL database on which CRUD operation to perform based on the route requested and request method.<br>
+The frontend sends requests to the backend NodeJS API which then instructs the PostgreSQL database on which CRUD operation to perform based on the route requested and request method.<br><br>
 It allows users to visualise all tasks, create new tasks, delete specific tasks and edit current tasks.
 ## Frontend:
-Inside the client folder you will find the frontend section built with React.js and Bootstrap.<br>
+Inside the client folder you will find the frontend section built with React.js and styled with Bootstrap 5.<br>
 ### React Components (`client/src/components`): 
 <ul>
 <li><strong>ListTodos:</strong><br>
-Responsible for rendering the table which contains a list of all the todo elements in our postgreSQL todo table.<br>
-It fetches data by sending a GET request to our server API which queries our database and sends back the requested data. <br>
-We loop through all the todo objects received to create table rows for each of them, each containing a description, edit and delete buttons.<br>
+<p>Responsible for rendering the table which contains a list of all the todo elements in our postgreSQL todo table.
+<p>It fetches data by sending a GET request to our server API which queries our database and sends back the requested data.
+<p>We loop through all the todo objects received to create table rows for each of them, each containing a description, edit and delete buttons.
 </li>
 <li><strong>InputTodos:</strong><br>
-Responsible for adding new elements into our database, which will be rendered by the ListTodos component.<br>
-When we submit the form, we call a function which will send a POST request to the server API with the form's contents in the body (stored in the description state).<br>
-the API will then take that request and insert its contents into the todo table in our database.
+<p>Responsible for adding new elements into our database, which will be rendered by the ListTodos component.
+<p>When we submit the form, we call a function which will send a POST request to the server API with the form's contents in the body (stored in the description state).
+<p>The API will then take that request and insert its contents into the todo table in our database.
 </li>
 <li><strong>EditTodos:</strong><br>
-Responsible for editing task descriptions, if is imported and used by the ListTodos component<br>
-By clicking the Edit button, we're able to view the tasks description and alter it, doing so will update the description state with that value<br>
-When we click apply, we call the function to send a PUT request to our server API with our new description in the body.<br>
-The API will then tell the database to update the contents of the description column for that given todo, based on its id.
+<p>Responsible for editing task descriptions, if is imported and used by the ListTodos component
+<p>By clicking the Edit button, we're able to view the tasks description and alter it, doing so will update the description state with that value
+<p>When we click apply, we call the function to send a PUT request to our server API with our new description in the body.
+<p>The API will then tell the database to update the contents of the description column for that given todo, based on its id.
 
 </li>
 </ul>
