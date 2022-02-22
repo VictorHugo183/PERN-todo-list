@@ -54,25 +54,25 @@ The API will then tell the database to update the contents of the description co
     </ul>
   </li>
   <li>
-    run `npm install` inside both `/client` and `/server` folders, to install dependencies.
+    run <code>npm install</code> inside both <code>/client</code> and <code>/server</code> folders, to install dependencies.
   </li>
   <li>
     <h3>setting up the database:</h3>
     <ul>
       <li>
-        run `psql -U postgres` on your terminal and input your password.
+        run <code>psql -U postgres</code> on your terminal and input your password.
       </li>
       <li>
-        type the commands inside the `/server/database.sql` file into your terminal to create the database.
+        type the commands inside the <code>/server/database.sql</code> file into your terminal to create the database.
       </li>
       <li>
-        modify the contents of the `server/db.js` file to match your details. 
+        modify the contents of the <code>server/db.js</code> file to match your details. 
       </li>
     </ul>
   </li>
   <li>
-    inside the `/server` directory run `node index.js` to start the server.
+    inside the <code>/server</code> directory run <code>node index.js</code> to start the server.
   </li>
   <li>
-    inside the `client` directory run `npm start` to start the application.
+    inside the <code>/client</code> directory run <code>npm start</code> to start the application.
   </li>
